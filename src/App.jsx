@@ -5,9 +5,9 @@ const PROFILE = {
   name: "Zainab Azeem",
   title: "Full Stack Developer · SQA Engineer",
   summary:
-    "I build clean, responsive web apps with the MERN stack and care deeply about quality, testing, and great UX. I also enjoy data-driven problem solving.",
+    "Full-Stack Web Developer (MERN | Next.js) with hands-on experience building and maintaining production web applications. Skilled in React, Node.js, Python (Flask), and MongoDB, with a focus on feature development, API integration, and performance improvement.",
   email: "zazeem159@gmail.com",
-  location: "Peshawar, Pakistan",
+  location: "Pakistan",
   links: {
     linkedin: "https://www.linkedin.com/in/zainab-azeem-43a66124a/",
     github: "https://github.com/Zainab-Azeem",
@@ -71,6 +71,37 @@ const PROJECTS = [
 ];
 
 const EXPERIENCE = [
+  {
+    role: "Full-Stack Web Developer (Remote)",
+    org: "Veritas Accounting & Tax Consultants (Canada)",
+    period: "Dec 2025 – Present",
+    points: [
+      "Built and maintained full-stack features using Next.js.",
+      "Developed backend APIs using Python (Flask) and supported frontend–backend data flow.",
+      "Handled forms, validations, bug fixes, and improved application performance.",
+    ],
+  },
+  {
+    role: "MERN Stack Developer",
+    org: "E-Digital Pakistan",
+    period: "Nov 2025 – Present",
+    points: [
+      "Selected for a PSEB-supported apprenticeship program",
+      "Working as a MERN stack full-stack developer",
+      "Gaining hands-on experience with React.js, Node.js, Express.js, and MongoDB",
+    ],
+  },
+  {
+    role: "Web Developer",
+    org: "The Korn",
+    period: "Oct 2025",
+    points: [
+      "Designed and deployed a production website used by a real business, including responsive UI, domain hosting, and post-deployment updates.",
+      "Managed custom domain deployment and handled post-deployment updates.",
+    ],
+    live: "https://thekorn.com.pk/",
+  },
+
   {
     role: "Software Quality Assurance Engineer",
     org: "Productbox",
@@ -138,7 +169,7 @@ export default function Portfolio() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-950 to-black text-slate-100 transition-all duration-300">
       {/* Navbar */}
       <header className="sticky top-0 z-30 border-b border-white/10 bg-slate-950/80 backdrop-blur">
-        <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
+        <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8 py-3 ">
           <a href="#home" className="text-lg font-semibold tracking-tight">
             {PROFILE.name}
           </a>
@@ -221,7 +252,10 @@ export default function Portfolio() {
       {/* profile */}
       <section
         id="home"
-        className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center"
+        className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8
+             pt-20 sm:pt-28
+             pb-[20px]
+             text-center"
       >
         <motion.div {...fadeUp}>
           <p className="mb-3 text-sm uppercase tracking-[0.2em] text-fuchsia-300/80">
@@ -273,16 +307,16 @@ export default function Portfolio() {
       {/* About */}
       <section
         id="about"
-        className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16"
+        className="mx-auto max-w-6xl px-3 sm:px-6 lg:px-8 py-16"
       >
         <motion.div {...fadeUp}>
           <SectionTitle>About</SectionTitle>
           <p className="max-w-3xl mx-auto text-slate-300 text-center leading-relaxed">
             I’m a Computer Science graduate from FAST NUCES with hands-on
-            experience in software quality assurance and web development. I love
-            transforming ideas into useful, accessible products and I’m
-            currently focused on React, Node, testing best practices, and cloud
-            deployments.
+            experience in full-stack web development and software quality
+            assurance. I enjoy turning ideas into clean, accessible, and
+            production-ready applications, and I’ve worked with React, Next.js,
+            Node.js, and modern development workflows on real-world projects.
           </p>
         </motion.div>
       </section>
@@ -369,6 +403,16 @@ export default function Portfolio() {
                     <li key={i}>{pt}</li>
                   ))}
                 </ul>
+                {e.live && (
+                  <a
+                    href={e.live}
+                    target="_blank"
+                    className="mt-3 inline-flex items-center gap-1 text-sm font-semibold hover:text-fuchsia-300"
+                  >
+                    🔗
+                    <span className="underline underline-offset-4">LIVE</span>
+                  </a>
+                )}
               </Card>
             ))}
           </div>
