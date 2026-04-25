@@ -11,7 +11,7 @@ const PROFILE = {
   links: {
     linkedin: "https://www.linkedin.com/in/zainab-azeem-43a66124a/",
     github: "https://github.com/Zainab-Azeem",
-    resume: "/Zainab_CV.pdf",
+    resume: "/Zainab_Azeem_CV.pdf",
   },
 };
 
@@ -72,16 +72,6 @@ const PROJECTS = [
 
 const EXPERIENCE = [
   {
-    role: "Full-Stack Web Developer (Remote)",
-    org: "Veritas Accounting & Tax Consultants (Canada)",
-    period: "Dec 2025 – Present",
-    points: [
-      "Built and maintained full-stack features using Next.js.",
-      "Developed backend APIs using Python (Flask) and supported frontend–backend data flow.",
-      "Handled forms, validations, bug fixes, and improved application performance.",
-    ],
-  },
-  {
     role: "MERN Stack Developer",
     org: "E-Digital Pakistan",
     period: "Nov 2025 – Present",
@@ -89,6 +79,16 @@ const EXPERIENCE = [
       "Selected for a PSEB-supported apprenticeship program",
       "Working as a MERN stack full-stack developer",
       "Gaining hands-on experience with React.js, Node.js, Express.js, and MongoDB",
+    ],
+  },
+  {
+    role: "Full-Stack Web Developer (Remote)",
+    org: "Veritas Accounting & Tax Consultants (Canada)",
+    period: "Dec 2025 – March 2026",
+    points: [
+      "Built and maintained full-stack features using Next.js.",
+      "Developed backend APIs using Python (Flask) and supported frontend–backend data flow.",
+      "Handled forms, validations, bug fixes, and improved application performance.",
     ],
   },
   {
