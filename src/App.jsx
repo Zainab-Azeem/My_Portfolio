@@ -74,7 +74,7 @@ const EXPERIENCE = [
   {
     role: "MERN Stack Developer",
     org: "E-Digital Pakistan",
-    period: "Nov 2025 – Present",
+    period: "Nov 2025 – May 2026",
     points: [
       "Selected for a PSEB-supported apprenticeship program",
       "Working as a MERN stack full-stack developer",
